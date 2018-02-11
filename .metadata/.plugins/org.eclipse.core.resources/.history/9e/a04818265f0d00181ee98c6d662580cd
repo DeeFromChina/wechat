@@ -1,0 +1,12 @@
+package com.wechat.service.user.impl;
+
+import com.dee.service.baseData.impl.BaseServiceImpl;
+import com.wechat.service.user.UserGroupService;
+
+public class UserGroupServiceImpl extends BaseServiceImpl implements UserGroupService{
+
+	public UserGroupServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.wechat.model.talk;
+
+public class CommunicateObject {
+
+	public CommunicateObject() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

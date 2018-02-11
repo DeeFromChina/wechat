@@ -1,0 +1,9 @@
+package com.wechat.service.communicate.impl;
+
+public class CommunicateServiceImpl {
+
+	public CommunicateServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

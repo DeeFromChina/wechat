@@ -1,0 +1,5 @@
+package com.dee.util;
+
+public interface Encryption {
+	public String encryption(String password) throws Exception;
+}

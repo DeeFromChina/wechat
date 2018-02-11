@@ -1,0 +1,17 @@
+package com.wechat.service.communicate;
+
+import java.util.List;
+import java.util.Map;
+
+import com.wechat.model.talk.CommunicateObject;
+
+public interface CommunicateService {
+	
+	public List<Map<String, Object>> query(Map<String, Object> form) throws Exception;
+
+	public void save(CommunicateObject communicateObject) throws Exception;
+	
+	public void update(CommunicateObject communicateObject) throws Exception;
+	
+	public void delete(int id) throws Exception;
+}

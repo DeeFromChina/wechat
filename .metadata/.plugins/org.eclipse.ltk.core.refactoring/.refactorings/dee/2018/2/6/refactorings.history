@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;wechat/src/com/wechat&apos; to &apos;dee&apos;" description="Rename resource &apos;wechat&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/wechat" name="dee" stamp="1517894875583" updateReferences="true"/>
+</session>

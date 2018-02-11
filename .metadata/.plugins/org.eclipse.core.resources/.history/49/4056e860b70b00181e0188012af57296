@@ -1,0 +1,8 @@
+package com.wechat.service.impl;
+
+import com.dee.service.baseData.impl.BaseServiceImpl;
+import com.wechat.service.UserService;
+
+public class UserServiceImpl extends BaseServiceImpl implements UserService {
+
+}

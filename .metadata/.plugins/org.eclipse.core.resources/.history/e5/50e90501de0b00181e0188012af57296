@@ -1,0 +1,9 @@
+package com.wechat.model.user;
+
+public class UserGroup {
+
+	public UserGroup() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

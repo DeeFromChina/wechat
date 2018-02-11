@@ -1,0 +1,9 @@
+package com.wechat.service.user.impl;
+
+public class UserGroupServiceImpl {
+
+	public UserGroupServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

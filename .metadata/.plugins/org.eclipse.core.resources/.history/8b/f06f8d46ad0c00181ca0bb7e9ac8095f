@@ -1,0 +1,6 @@
+<sqls>
+	<sql id="queryCommunicateObject">
+		SELECT * FROM communicate_object
+		ORDER BY type,send_time,target_id DESC
+	</sql>
+</sqls>

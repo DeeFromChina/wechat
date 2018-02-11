@@ -1,0 +1,6 @@
+package com.wechat.service.communicate;
+
+public interface CommunicateService {
+
+	public void save() throws Exception;
+}

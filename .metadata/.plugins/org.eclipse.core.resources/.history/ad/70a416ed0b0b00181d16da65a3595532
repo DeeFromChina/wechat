@@ -1,0 +1,7 @@
+package com.dee.util;
+
+public interface JSONString {
+	
+	public String toJson(Object obj);
+
+}

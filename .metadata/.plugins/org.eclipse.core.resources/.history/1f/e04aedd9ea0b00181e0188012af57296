@@ -1,0 +1,36 @@
+package com.wechat.service.communicate.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dee.dao.BaseDao;
+import com.dee.service.baseData.impl.BaseServiceImpl;
+import com.wechat.model.talk.CommunicateObject;
+import com.wechat.service.communicate.CommunicateService;
+
+@Service("communicateService")
+public class CommunicateServiceImpl extends BaseServiceImpl implements CommunicateService{
+
+	@Autowired
+	private BaseDao basedao;
+	
+	@Override
+	public void save(CommunicateObject communicateObject) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(CommunicateObject communicateObject) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

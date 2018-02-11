@@ -1,0 +1,12 @@
+package com.wechat.service.communicate;
+
+import com.wechat.model.talk.CommunicateObject;
+
+public interface CommunicateService {
+
+	public void save(CommunicateObject communicateObject) throws Exception;
+	
+	public void update(CommunicateObject communicateObject) throws Exception;
+	
+	public void delete(int id) throws Exception;
+}

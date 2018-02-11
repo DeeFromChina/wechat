@@ -1,0 +1,22 @@
+package com.dee.util.impl;
+
+import java.security.MessageDigest;
+import org.springframework.stereotype.Service;
+import com.dee.util.Encryption;
+import sun.misc.BASE64Encoder;
+
+@Service("encryption")
+public class EncryptionImpl{
+
+	public String encryption(String password) throws Exception {
+		try{
+			   MessageDigest sha = MessageDigest.getInstance("SHA");
+			   BASE64Encoder encoder = new BASE64Encoder();
+			   return encoder.encode(sha.digest(password.getBytes()));
+		   }catch(Exception e){
+			   e.printStackTrace();
+			   return null;
+		   }
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.wechat.controller.communicate;
+
+public class CommunicateController {
+
+	public CommunicateController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

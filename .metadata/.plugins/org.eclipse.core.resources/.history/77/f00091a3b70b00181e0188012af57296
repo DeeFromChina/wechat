@@ -1,0 +1,105 @@
+package com.wechat.service.impl;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dee.dao.BaseDao;
+import com.dee.model.User;
+import com.dee.model.util.CheckBox;
+import com.dee.model.util.Tree;
+import com.dee.service.baseData.impl.BaseServiceImpl;
+import com.dee.util.BaseUtil;
+import com.dee.util.EncodeUtil;
+import com.dee.util.FileUtils;
+import com.wechat.service.UserService;
+
+@Service("userService")
+public class UserServiceImpl extends BaseServiceImpl implements UserService {
+
+	@Autowired
+	private BaseDao baseDao;
+
+	@Override
+	public User getById(int id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Map<String, Object> map) throws Exception {
+		User user = new User();
+		BaseUtil.mapToObject(user, map);
+		if((user.getEmail() != null || user.getPhone() != null) && user.getPassword() != null){
+			user.setUserType(BaseUtil.returnInt(map.get("type")));
+			baseDao.save(user);
+		}
+	}
+
+	@Override
+	public void update(User user) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Map<String, Object>> getMap(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteByIds(String ids) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteById(String ids) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Tree> getTree(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CheckBox> getCheckBox(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User getByAccount(String account, String password) throws Exception {
+		StringBuffer hql = new StringBuffer();
+		hql.append("FROM User WHERE ");
+		if(!BaseUtil.isEmail(account)){
+			Integer phone = BaseUtil.returnInt(account);
+			if(phone != 0){
+				hql.append("phone=" + phone);
+			}else{
+				throw new Exception("账号有误");
+			}
+		}else{
+			hql.append("email='" + account + "'");
+		}
+		User user = null;
+		List<User> users = (List<User>) baseDao.findByHql(hql.toString());
+		if(users != null && users.size() == 1){
+			user = users.get(0);
+			if(!password.equals(user.getPassword())){
+				throw new Exception("密码有误");
+			}
+		}else if(users.size() > 1){
+			throw new Exception("用户有误");
+		}
+		return user;
+	}
+}

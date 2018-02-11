@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.offer.util.BaseUtil"/>
+<fullyQualifiedTypeName name="com.dee.service.baseData.BaseService"/>
+<fullyQualifiedTypeName name="com.offer.model.baseData.City"/>
+<fullyQualifiedTypeName name="com.dee.service.baseData.CityService"/>
+<fullyQualifiedTypeName name="com.dee.model.City"/>
+<fullyQualifiedTypeName name="com.dee.util.Code"/>
+<fullyQualifiedTypeName name="com.dee.util.JSONString"/>
+<fullyQualifiedTypeName name="com.dee.controller.BaseController"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.wechat.service.UserService"/>
+<fullyQualifiedTypeName name="com.dee.util.FileUtils"/>
+<fullyQualifiedTypeName name="com.dee.model.util.Tree"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.wechat.service.user.UserService"/>
+<fullyQualifiedTypeName name="com.dee.util.BaseUtil"/>
+<fullyQualifiedTypeName name="com.wechat.service.communicate.CommunicateService"/>
+<fullyQualifiedTypeName name="com.dee.dao.BaseDao"/>
+<fullyQualifiedTypeName name="com.wechat.model.talk.CommunicateObject"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.dee.util.CheckUtil"/>
+<fullyQualifiedTypeName name="com.dee.model.User"/>
+<fullyQualifiedTypeName name="com.dee.service.baseData.impl.BaseServiceImpl"/>
+<fullyQualifiedTypeName name="com.wechat.service.user.UserGroupService"/>
+</qualifiedTypeNameHistroy>

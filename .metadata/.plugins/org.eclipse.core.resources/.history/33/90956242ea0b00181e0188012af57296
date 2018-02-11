@@ -1,0 +1,12 @@
+package com.wechat.service.communicate.impl;
+
+import com.dee.service.baseData.impl.BaseServiceImpl;
+import com.wechat.service.communicate.CommunicateService;
+
+public class CommunicateServiceImpl extends BaseServiceImpl implements CommunicateService{
+
+	public CommunicateServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

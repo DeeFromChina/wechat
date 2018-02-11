@@ -1,0 +1,7 @@
+package com.wechat.service.impl;
+
+import com.wechat.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+}
