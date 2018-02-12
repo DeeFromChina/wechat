@@ -1,0 +1,6 @@
+.login-top{
+	width: 320px;
+}
+#dataForm{
+	width:350px;
+}

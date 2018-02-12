@@ -28,4 +28,5 @@
 <fullyQualifiedTypeName name="com.dee.model.User"/>
 <fullyQualifiedTypeName name="com.dee.service.baseData.impl.BaseServiceImpl"/>
 <fullyQualifiedTypeName name="com.wechat.service.user.UserGroupService"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 </qualifiedTypeNameHistroy>

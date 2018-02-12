@@ -10,7 +10,7 @@ http://www.springframework.org/schema/mvc
 http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
 	<!-- 自动扫描controller包下的所有类，使其认为spring mvc的控制器 -->
-	<context:component-scan base-package="com.offer.controller" />
+	<context:component-scan base-package="prj.*.controller" />
 
 	<!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
 	<bean
@@ -51,7 +51,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**"/>
-			<bean class="com.dee.interceptor.AllInterceptor">
+			<bean class="prj.dee.interceptor.AllInterceptor">
 			</bean>
 		</mvc:interceptor>
 	</mvc:interceptors>

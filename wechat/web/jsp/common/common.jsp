@@ -22,7 +22,7 @@ String baseImg = request.getContextPath() + "/img/";
 <link href="<%=baseCss %>web-frame/bootstrap.min.css?randomId=<%=Math.random()%>" rel="stylesheet">
 <link href="<%=baseCss %>web-frame/base.css?randomId=<%=Math.random()%>" rel="stylesheet">
 <link href="<%=baseCss %>web-frame/bootstrap-datetimepicker.min.css?randomId=<%=Math.random()%>" rel="stylesheet" />
-<link href="<%=baseCss %>common/common.css?randomId=<%=Math.random()%>" type="text/css"/>
+<link href="<%=baseCss %>common/common.css?randomId=<%=Math.random()%>" rel="stylesheet"/>
 </head>
 <script src="<%=baseJs %>web-frame/jquery-3.1.1.min.js?randomId=<%=Math.random()%>" type="text/javascript"></script>
 <script src="<%=baseJs %>web-frame/jquery-ui.min.js?randomId=<%=Math.random()%>"></script>
